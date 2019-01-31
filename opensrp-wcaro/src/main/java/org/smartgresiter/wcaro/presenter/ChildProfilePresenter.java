@@ -223,7 +223,7 @@ public class ChildProfilePresenter implements ChildProfileContract.Presenter, Ch
         dob = Utils.getDuration(Utils.getValue(client.getColumnmaps(), DBConstants.KEY.DOB, false));
         getView().setAge(dob);
         //dobString = dobString.contains("y") ? dobString.substring(0, dobString.indexOf("y")) : dobString;
-        String address = Utils.getValue(client.getColumnmaps(), ChildDBConstants.KEY.FAMILY_HOME_ADDRESS, true);
+        String address = Utils.getValue(client.getColumnmaps(), DBConstants.KEY.VILLAGE_TOWN, true);
         String gender = Utils.getValue(client.getColumnmaps(), DBConstants.KEY.GENDER, true);
 
         getView().setAddress(address);
